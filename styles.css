@@ -23,10 +23,10 @@ header {
     left: 0;
     right: 0;
     position: fixed;
-    background: var(--black);
+    background: var(--white);
 }
 
-header .contenedor, .desplegar{
+header .contenedor{
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -46,7 +46,7 @@ nav{
 
 nav a, .desplegar{
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
     font-size: 1em;
     margin: 0 1.5vw;
 }
@@ -57,12 +57,12 @@ nav a, .desplegar{
     justify-content: center;
     height: 50%;
     position: sticky;
-    color: var(--white);
+    color: var(--black);
 }
 
 .desplegar:hover{
 
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
   font-style: var(--black);
   height: 80vh;
   width: 30vw;
