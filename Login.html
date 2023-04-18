@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,55 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/b7a5ab63e4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Righteous&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
+    <header>
+        <div class="contenedor">
+
+            <a href="Landing.html">
+                <h2> Nuestra página </h2>
+            </a>
+                           
+            <nav class="nav">
+                <input type="text" placeholder="Buscar">
+                <a href="Landing.html"> Tienda</a>
+                <a href="contact.html"> Contacto</a>
+                <a class="desplegar" ><i class="fa-regular fa-heart"></i></a>
+                <a class="desplegar" ><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="Login.html"><i class="fa-regular fa-user"></i> Login</a>
+                <a href="Registry.html"><i class="fa-solid fa-user-plus"></i> Sign up</a>  
+            </nav>
+
+        </div>
+
+    </header>
+    <div class="formulario">
+        <h1>Inicio de sesión</h1>
+        <div class="registrarse">
+            <a href="#">Crear cuenta</a>
+        </div>
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>Nombre de Usuario</label>
+            </div>
+            <div class="password1">
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="recordar">¿Olvidó su contraseña?</div>
+            <div class="checkbox"><input type="checkbox"> Recordar contraseña </div>
+            <input type="submit" value="Iniciar"></div>
+        </form>
+
+    </div>
+    
+    <script src="./script.js"></script>
 </body>
+
 </html>
