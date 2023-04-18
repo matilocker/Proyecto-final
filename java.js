@@ -52,9 +52,7 @@ let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32
 // } );
 
 
-//segundo intento carrucel-------------------------------------------
-
-
+//segundo intento carrusel-------------------------------------------
 
 // window.addEventListener('load', function(){
 
@@ -66,12 +64,8 @@ let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32
 //           prev: '.glider-prev',
 //           next: '.glider-next'
 //         }
-
-
 //     });
-
 // });
-
 
 //tercer intento carrucel-------------------------------------------
 
@@ -83,15 +77,13 @@ cont = 0;
 arrowsIcon.forEach(icon => {
 
     icon.addEventListener("click", e => {
-
-        
+ 
         let atras = document.querySelector('.fa-chevron-left'),
             adelante = document.querySelector('.fa-chevron-right'),
             img1  = document.querySelector('.aa'),
             img2  = document.querySelector('.aa2'),
             img3  = document.querySelector('.aa3'),
             tgt = e.target; 
-
 
         if(tgt == atras){
             
@@ -106,9 +98,6 @@ arrowsIcon.forEach(icon => {
                 img3.src = imagenes[imagenes.length - 1];
                 cont = imagenes.length - 1 ;
             }
-            
-
-
 
         } else  if (tgt == adelante){
 
@@ -127,22 +116,11 @@ arrowsIcon.forEach(icon => {
             cont = 0;
         }
 
-     
-
-
-
-
     console.log(icon);
-
 
     })
 
-
-
 })
-
-
-
 
 //compra-------------------------------------------
 
@@ -152,21 +130,15 @@ const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
 
-
 co.classList.add("visible");
-
 
 })
 
 cerrar.addEventListener("click", () => {
 
-
     co.classList.remove("visible");
 
-
 })
-
-
 
 // me gusta -------------------------------------------
 
@@ -176,20 +148,15 @@ const cerrargustar = document.querySelector("#cerrargustar");
 
 abrirgustar.addEventListener("click", () => {
 
-
 gg.classList.add("visible");
-
 
 })
 
 cerrargustar.addEventListener("click", () => {
 
-
     gg.classList.remove("visible");
 
-
 })
-
 
 // Tarjeta -------------------------------------------
 
@@ -216,7 +183,6 @@ previewBox.forEach(close =>{
         previewContainer.style.display = 'none';
     };
 });
-
 
 // añadir a compra -------------------------------------------
 
@@ -258,11 +224,8 @@ previewBox.forEach(close =>{
 
 // añadir a compra segundo intento -------------------------------------------
 
-
 const cartitem = document.querySelector('.cartunion');
 const rowproduct = document.querySelector('.cart-item');
-
-
 
 const productList = document.querySelector('.products-preview ');
 
@@ -307,16 +270,9 @@ productList.addEventListener('click', e => {
 
         }
 
-
-
-
-        
-        
-
         showHtml();
     }
 
-    
 })
 // Eliminar del carrito
 
@@ -325,7 +281,6 @@ rowproduct.addEventListener('click', e => {
         const product = e.target.parentElement;
         const title = product.querySelector('p').textContent;
         
-
         allProducts = allProducts.filter(
             product => product.title !== title
         
@@ -336,8 +291,6 @@ rowproduct.addEventListener('click', e => {
     }
 
 });
-
-
 
 // añadir carrito mostrar html
 
@@ -368,14 +321,11 @@ rowproduct.innerHTML = '';
         </div>
     </div>        
         
-        
         `;
-
 
         rowproduct.append(containerProduct);
 
         total = total +  product.quantify * parseInt(product.price.slice(1));
-    
 
         totalOfProducts = totalOfProducts + product.quantify;
 
@@ -385,17 +335,12 @@ rowproduct.innerHTML = '';
 
     countProducts.innerText = totalOfProducts;
 
-
 };
-
 
 // Me gusta añadir
 
-
-
 // const itembig = document.querySelector('.uniongustar');
 // const itemindividual = document.querySelector('.individual-item');
-
 
 // let TodosProducts =[];
 
