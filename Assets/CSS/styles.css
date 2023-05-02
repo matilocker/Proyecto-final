@@ -74,9 +74,6 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contenedor a {
     padding-bottom: 0px;
     padding-top: 0px;
     margin-top: 0px;
@@ -289,7 +286,6 @@ iframe {
 }
 
 .cart-item p {
-
     font-size: 0.9em;
 }
 
@@ -371,19 +367,16 @@ iframe {
     font-size: 1.5rem;
 }
 
-.compra {
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
-    border: 0.5rem solid blueviolet;
-    border-radius: 1rem;
-    margin-top: 50px;
-}
-
+.compra,
 .carrito {
     font-size: 1rem;
     color: rgb(0, 0, 0);
     border: 0.5rem solid blueviolet;
     border-radius: 1rem;
+}
+
+.compra {
+    margin-top: 50px;
 }
 
 /* Página de Login*/
@@ -410,18 +403,16 @@ iframe {
     border-bottom: 1px solid var(--gray);
 }
 
-.formulario form {
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-
 form .username {
     position: relative;
     border-bottom: 2px solid rgb(0, 0, 0);
     margin: 30px 0;
 }
 
-.username input {
+.username input,
+.correo input,
+.password input,
+.usuario input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -447,16 +438,6 @@ form .password {
     pointer-events: none;
 }
 
-.password input {
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
 .password label {
     position: absolute;
     top: 50%;
@@ -470,20 +451,6 @@ form .password {
 .recordar {
     margin-bottom: 10px;
     color: black;
-}
-
-input[type="submit"] {
-    width: 100%;
-    height: 40px;
-    border: 1px solid var(--gray);
-    background: rgba(38, 37, 37, 0.503);
-    margin-bottom: 20px;
-    border-radius: 20px;
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--white);
-    cursor: pointer;
-    outline: none;
 }
 
 .username span::before {
@@ -553,34 +520,25 @@ input[type="submit"] {
     z-index: 2;
 }
 
+.signup h1,
 .registro {
-    margin-left: 75px;
-}
-
-.signup h1 {
     text-align: center;
     margin-left: 75px;
 }
 
-.signup form {
+.signup form,
+.formulario form {
     margin-left: 25px;
     padding: 0 40px;
     box-sizing: border-box;
 }
 
-form .usuario {
+form .usuario,
+form .password,
+form .correo,
+.checkbox {
     position: relative;
     margin: 30px 0;
-}
-
-.usuario input {
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
 }
 
 .usuario label {
@@ -593,46 +551,7 @@ form .usuario {
     pointer-events: none;
 }
 
-form .password {
-    position: relative;
-    margin: 30px 0;
-}
-
-.password input {
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.password label {
-    position: absolute;
-    top: -50%;
-    left: 10px;
-    color: black;
-    transform: translateY (50%);
-    font-size: 16px;
-    pointer-events: none;
-}
-
-form .correo {
-    position: relative;
-    margin: 30px 0;
-}
-
-.correo input {
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
+.password label,
 .correo label {
     position: absolute;
     top: -50%;
@@ -643,65 +562,42 @@ form .correo {
     pointer-events: none;
 }
 
-input[type="email"] {
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
     width: 100%;
-    height: 40px;
-    border: 1px solid var(--gray);
     background: rgba(38, 37, 37, 0.503);
     margin-bottom: 20px;
     border-radius: 20px;
+}
+
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    height: 40px;
+    border: 1px solid var(--gray);
     font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--white);
     cursor: pointer;
     outline: none;
-}
-
-input[type="password"] {
-    width: 100%;
-    height: 40px;
-    border: 1px solid var(--gray);
-    background: rgba(38, 37, 37, 0.503);
-    margin-bottom: 20px;
-    border-radius: 20px;
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--white);
-    cursor: pointer;
-    outline: none;
-}
-
-.checkbox {
-    margin: 30px 0;
 }
 
 input[type="submit"] {
     width: 60%;
-    height: 40px;
-    border: 1px solid var(--gray);
     background: var(--gray);
     margin-bottom: 20px;
     margin-left: 90px;
     border-radius: 20px;
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--white);
-    cursor: pointer;
-    outline: none;
 }
 
 input[type="text"] {
     width: 100%;
-    height: 40px;
-    border: 1px solid var(--gray);
     background: rgba(38, 37, 37, 0.503);
     padding-top: 30px;
     border-radius: 0px;
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--white);
-    cursor: pointer;
-    outline: none;
 }
 
 .account,
