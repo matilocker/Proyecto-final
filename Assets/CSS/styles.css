@@ -382,13 +382,11 @@ iframe {
 /* Página de Login*/
 
 .formulario {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: var(--gray);
-    border-radius: 10px;
+    flex-direction: column;
 }
 
 .formulario h1 {
@@ -490,34 +488,23 @@ form .password {
 
 /*Página de registro*/
 
+.signup,
+.formulario {
+    position: fixed;
+    margin: 30px;
+    background: var(--gray);
+    border-radius: 10px;
+    display: flex;
+    backdrop-filter: var(--blur);
+    padding: 10px;
+}
+
 .signup {
-    position: absolute;
     top: 50%;
     left: 45%;
     transform: translate(-45%, -50%);
     width: 800px;
-    background: var(--gray);
-    border-radius: 10px;
-    display: flex;
     flex-direction: row;
-    backdrop-filter: var(--blur);
-}
-
-.y {
-    height: 200px;
-    width: 200px;
-    margin-top: 75px;
-    margin-left: 25px;
-    border-radius: 20px;
-    position: relative;
-}
-
-.x {
-    height: 100px;
-    margin-left: 975px;
-    margin-top: 550px;
-    position: absolute;
-    z-index: 2;
 }
 
 .signup h1,
