@@ -1,82 +1,78 @@
-[
+ {
+    "men's": [],
+    "Ropa": [
+    
     {
         "id": 1,
-        "title": "",
+        "title": "Pantalón en cuero sintético",
         "price": 100,
         "description": "",
         "category": "men's clothing",
-        "image": ""
+        "image": "Imgs./00019-peter-do-spring-2023-ready-to-wear-credit-monica-feudi.jpg.webp"
     },
     {
         "id": 2,
-        "title": "",
+        "title": "Vestido amarillo con capucha",
         "price": 100,
         "description": "",
         "category": "women's clothing",
-        "image": ""
+        "image": "Imgs./00020-saint-laurent-spring-2023-ready-to-wear-credit-gorunway.jpg.webp"
     },
     {
         "id": 3,
-        "title": "",
+        "title": "Gabán en color beige oversized",
         "price": 100,
         "description": "",
-        "category": "men's clothing",
-        "image": ""
+        "category": "women's clothing",
+        "image": "Imgs./00033-dries-van-noten-spring-2023-ready-to-wear-credit-gorunway.jpg.webp"
     },
     {
         "id": 4,
-        "title": "",
+        "title": "Vestido azul primaveral",
         "price": 100,
         "description": "",
         "category": "women's clothing",
-        "image": ""
+        "image": "Imgs./app001prod.jpeg"
     },
     {
         "id": 5,
-        "title": "",
+        "title": "Gabán negro oversized",
         "price": 100,
         "description": "",
-        "category": "men's clothing",
-        "image": ""
+        "category": "women's clothing",
+        "image": "Imgs./LGN_fw23_runway_press_look06.jpeg.webp"
     },
     {
         "id": 6,
-        "title": "",
+        "title": "Suéter gris oversized en lana",
         "price": 100,
         "description": "",
-        "category": "women's clothing",
-        "image": ""
+        "category": "men's clothing",
+        "image": "Imgs./LGN_fw23_runway_press_look09.jpeg.webp"
     },
     {
         "id": 7,
-        "title": "",
+        "title": "Conjunto de tres piezas, camiseta, pantalón y saco en celeste",
         "price": 100,
         "description": "",
-        "category": "men's clothing",
-        "image": ""
+        "category": "women's clothing",
+        "image": "Imgs./LGN_fw23_runway_press_look21.jpeg.webp"
     },
     {
         "id": 8,
-        "title": "",
-        "price": 100,
-        "description": "",
-        "category": "women's clothing",
-        "image": ""
-    },
-    {
-        "id": 9,
-        "title": "",
+        "title": "Chaqueta oversized en cuero sintético",
         "price": 100,
         "description": "",
         "category": "men's clothing",
-        "image": ""
+        "image": "Imgs./VO0423_Designer_01.jpg.webp"
     },
     {
-        "id": 10,
-        "title": "",
+        "id": 9,
+        "title": "Vestido blanco elegante",
         "price": 100,
         "description": "",
         "category": "women's clothing",
-        "image": ""
+        "image": "Imgs./w1365_q60.jpg.avif"
     }
 ]
+}
