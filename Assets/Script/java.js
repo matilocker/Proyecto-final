@@ -1,6 +1,21 @@
-import { Producto, traerRopa } from "./utils";
+import { Producto, traerRopa } from "./utils.js";
 
-// carrusel 
+//carrusel 
+
+for (let ropa of data) {
+    let cloth = new Producto(ropa.image, ropa.title, ropa.id);
+    let contenedor;
+
+    if (ropa.category === "men's clothing") {
+        document.querySelector("#carousel_men");
+    } else {
+        document.querySelector("#carousel_women");
+    };
+
+    const clothes = cloth.render();
+    contenedor.appendChild(clothes);
+    cloth.addClickListener();
+};
 
 /*let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32b295.jpg', 
 'https://i.pinimg.com/564x/40/38/cc/4038ccbfa8b0e80bb438de1111d3d6a2.jpg', 
@@ -9,12 +24,11 @@ import { Producto, traerRopa } from "./utils";
 'https://i.pinimg.com/564x/80/61/7d/80617dd6e3de3856a71f4f3e6a5ce078.jpg',
 'https://i.pinimg.com/564x/7e/9b/09/7e9b092dc6b1cf3fcfdbd042220a7b5b.jpg'];*/
 
-
 //tercer intento carrucel-------------------------------------------
 
-const  carousel = document.querySelectorAll(".movimiento1 img");
+/*const  carousel = document.querySelectorAll(".movimiento1 img");
 const  arrowsIcon = document.querySelectorAll(".movimiento1 i");
-cont = 0;
+//const = 0;
 
 arrowsIcon.forEach(icon => {
 
@@ -62,7 +76,7 @@ arrowsIcon.forEach(icon => {
 
     })
 
-})
+})*/
 
 //compra-------------------------------------------
 
@@ -72,7 +86,7 @@ const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
 
-co.classList.add("visible");
+    co.classList.add("visible");
 
 })
 
@@ -90,7 +104,7 @@ const cerrargustar = document.querySelector("#cerrargustar");
 
 abrirgustar.addEventListener("click", () => {
 
-gg.classList.add("visible");
+    gg.classList.add("visible");
 
 })
 
@@ -102,24 +116,24 @@ cerrargustar.addEventListener("click", () => {
 
 // Tarjeta -------------------------------------------
 
-let  previewContainer = document.querySelector('.products-preview');
-let previewBox =  previewContainer.querySelectorAll('.preview');
-    
-document.querySelectorAll('.movimiento1 .imgproducto ').forEach(imgproducto =>{
+let previewContainer = document.querySelector('.products-preview');
+let previewBox = previewContainer.querySelectorAll('.preview');
+
+document.querySelectorAll('.movimiento1 .imgproducto ').forEach(imgproducto => {
     imgproducto.onclick = () => {
         previewContainer.style.display = 'flex';
         let name = imgproducto.getAttribute('data-name');
-        previewBox.forEach(preview =>{
-        let target = preview.getAttribute('data-target');
-            if(name == target){
+        previewBox.forEach(preview => {
+            let target = preview.getAttribute('data-target');
+            if (name == target) {
                 preview.classList.add('active');
             }
         });
     };
 });
 
-previewBox.forEach(close =>{
-    close.querySelector('.fa-rectangle-xmark').onclick = () =>{
+previewBox.forEach(close => {
+    close.querySelector('.fa-rectangle-xmark').onclick = () => {
         close.classList.remove('active');
         previewContainer.style.display = 'none';
     };
@@ -132,14 +146,14 @@ const rowproduct = document.querySelector('.cart-item');
 
 const productList = document.querySelector('.products-preview ');
 
-let allProducts =[];
+let allProducts = [];
 
 const valorTotal = document.querySelector('.subtotal')
 
 const countProducts = document.querySelector('#contador-productos')
 
 productList.addEventListener('click', e => {
-    if(e.target.classList.contains('bt-a')){
+    if (e.target.classList.contains('bt-a')) {
         const product = e.target.parentElement
 
         const infoProduct = {
@@ -147,26 +161,26 @@ productList.addEventListener('click', e => {
             quantify: 1,
             title: product.querySelector('h3').textContent,
             price: product.querySelector('span').textContent,
-            info:  product.querySelector('p').textContent,  
+            info: product.querySelector('p').textContent,
         }
 
         // Aumento cantidad al carrito
 
-        const exits = allProducts.some(product => product.title ===infoProduct.title)
+        const exits = allProducts.some(product => product.title === infoProduct.title)
         console.log(exits)
 
-        if (exits){
+        if (exits) {
             const products = allProducts.map(product => {
-                if(product.title === infoProduct.title){
+                if (product.title === infoProduct.title) {
                     product.quantify++;
                     return product
-                }else{
+                } else {
                     return product
                 }
             })
             allProducts = [...products]
-        }else{
-     
+        } else {
+
             allProducts = [...allProducts, infoProduct]
 
         }
@@ -178,13 +192,13 @@ productList.addEventListener('click', e => {
 // Eliminar del carrito
 
 rowproduct.addEventListener('click', e => {
-    if(e.target.classList.contains('fa-rectangle-xmark')) {
+    if (e.target.classList.contains('fa-rectangle-xmark')) {
         const product = e.target.parentElement;
         const title = product.querySelector('p').textContent;
-        
+
         allProducts = allProducts.filter(
             product => product.title !== title
-        
+
         );
 
         console.log(allProducts)
@@ -197,9 +211,9 @@ rowproduct.addEventListener('click', e => {
 
 const showHtml = () => {
 
-// Limpiar carrito
+    // Limpiar carrito
 
-rowproduct.innerHTML = '';
+    rowproduct.innerHTML = '';
 
     let total = 0;
     let totalOfProducts = 0;
@@ -226,7 +240,7 @@ rowproduct.innerHTML = '';
 
         rowproduct.append(containerProduct);
 
-        total = total +  product.quantify * parseInt(product.price.slice(1));
+        total = total + product.quantify * parseInt(product.price.slice(1));
 
         totalOfProducts = totalOfProducts + product.quantify;
 

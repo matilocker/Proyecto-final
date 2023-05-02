@@ -25,6 +25,7 @@ export class Producto {
         const caja = document.createElement("div");
         const carousel_men = document.querySelector("#carousel_men");
         const carousel_women = document.querySelector("#carousel_women");
+        caja.classList.add ("image");
 
         imagen.src = this.imagen;
         caja.appendChild(imagen);
@@ -34,5 +35,15 @@ export class Producto {
             carousel_women.appendChild(caja);
         };
         return imagen;
+    };
+
+    addClickListener() {
+        const image = document.querySelector("#image"+this.id);
+        image.addEventListener("click", () => {
+            window.location = "/product.html?productId="+this.id;
+            //const img = document.createElement("img");
+            //img.src = "image"
+            //window.appendChild("img");
+        });
     };
 }
