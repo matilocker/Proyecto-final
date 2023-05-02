@@ -13,7 +13,8 @@ body {
     height: 100vh;
 }
 
-header, footer {
+header,
+footer {
     padding: 0px;
     width: 100vw;
 }
@@ -60,7 +61,7 @@ nav a {
     justify-content: center;
 }
 
-.contenedor a img{
+.contenedor a img {
     display: flex;
     justify-content: center;
     object-fit: contain;
@@ -69,7 +70,7 @@ nav a {
     margin: 0px;
 }
 
-.contenedor a{
+.contenedor a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +124,8 @@ nav a {
 
 /**Imagen de Landing (Hombre y Mujer)*/
 
-.imagen, .imagen2 {
+.imagen,
+.imagen2 {
     flex-direction: column;
     background-position: center center;
     background-size: cover;
@@ -197,7 +199,7 @@ iframe {
 
 /*pag contacto*/
 
-.us1 {
+.mision {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,30 +208,21 @@ iframe {
     height: 30vh;
 }
 
-.us2 {
+.mateo,
+.diana {
     display: flex;
     justify-content: row;
     margin: 50px 180px 50px 180px;
     text-align: right;
 }
 
-.us2 p {
+.mateo p,
+.diana p {
     margin-right: 50px;
     margin-top: 20px;
 }
 
-.us3 {
-    display: flex;
-    justify-content: row;
-    margin: 50px 180px 50px 180px;
-}
-
-.us3 p {
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-.nu {
+.nuestraPagina {
     text-decoration: none;
     color: black;
 }

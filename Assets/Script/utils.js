@@ -37,7 +37,7 @@ export class Producto {
         return imagen;
     };
 
-    addClickListener() {
+    /*addClickListener() {
         const image = document.querySelector("#image"+this.id);
         image.addEventListener("click", () => {
             window.location = "/product.html?productId="+this.id;
@@ -45,5 +45,5 @@ export class Producto {
             //img.src = "image"
             //window.appendChild("img");
         });
-    };
+    };*/
 }
