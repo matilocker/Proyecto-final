@@ -37,7 +37,7 @@ footer {
 
 /*Barra de navegación*/
 
-nav.nav {
+.nav {
     display: flex;
     background-color: var(--white);
     padding-top: 0px;
@@ -46,7 +46,7 @@ nav.nav {
     max-width: fit-content;
 }
 
-nav a {
+.nav a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 1em;
@@ -80,7 +80,7 @@ nav a {
     margin-bottom: 0px;
 }
 
-.contenedor nav.nav input {
+.contenedor .nav input {
     outline: none;
     height: 30px;
     width: 50px;
@@ -491,7 +491,7 @@ form .password {
 .signup,
 .formulario {
     position: fixed;
-    margin: 30px;
+    margin: 50px;
     background: var(--gray);
     border-radius: 10px;
     display: flex;
@@ -590,8 +590,5 @@ input[type="text"] {
 .account,
 .login {
     margin-left: 50px;
-}
-
-.login {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
