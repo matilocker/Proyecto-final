@@ -1,20 +1,84 @@
 import { Producto, traerRopa } from "./utils.js";
+/*
+
+
+*/
+
+// header
+const header = document.querySelector(".contenedor");
+
+const logo = document.createElement("a");
+logo.href = "Landing.html";
+const logo_imagen = document.createElement("img");
+logo_imagen.src = "Logo/Logo nav.png";
+
+const navegador = document.createElement("nav");
+navegador.classList.add("nav");
+
+logo.appendChild(logo_imagen);
+header.appendChild(logo);
+header.appendChild(navegador);
+
+const buscar = document.createElement("input");
+buscar.classList.add ("buscar");
+buscar.type = "text";
+buscar.placeholder = "buscar";
+
+const nosotros = document.createElement("a");
+nosotros.href = "contact.html";
+nosotros.classList.add("nosotros");
+nosotros.innerText = "¿Quiénes somos?";
+
+const tienda = document.createElement("a");
+tienda.href = "Landing.html";
+tienda.classList.add("tienda");
+tienda.innerText = "Tienda";
+
+const favoritos = document.createElement("div");
+favoritos.classList.add("favoritos")
+favoritos.innerHTML = `
+<i id="abrirgustar" class="fa-regular fa-heart"></i>`+" Favoritos";
+
+const carrito = document.createElement("a");
+carrito.classList.add("carrito");
+carrito.innerHTML = `
+<i id="abrir" class="fa-solid fa-bag-shopping"></i>`+" Carrito";
+
+const login = document.createElement("a");
+login.href = "Login.html";
+login.innerHTML =`
+<i class="fa-regular fa-user"></i>`+" Login";
+
+const signup = document.createElement("a");
+signup.href = "Registry.html";
+signup.innerHTML = `
+<i class="fa-regular fa-user-plus"></i>`+" Sign up";
+
+navegador.appendChild(buscar);
+navegador.appendChild(nosotros);
+navegador.appendChild(tienda);
+navegador.appendChild(favoritos);
+navegador.appendChild(carrito);
+navegador.appendChild(login); 
+navegador.appendChild(signup);
 
 //carrusel 
+const render = async () => {
+    const data = await traerRopa();
+    for (let ropa of data) {
+        let cloth = new Producto(ropa.image, ropa.title, ropa.id);
+        let contenedor;
 
-for (let ropa of data) {
-    let cloth = new Producto(ropa.image, ropa.title, ropa.id);
-    let contenedor;
+        if (ropa.category === "men's clothing") {
+            document.querySelector("#carousel_men");
+        } else {
+            document.querySelector("#carousel_women");
+        };
 
-    if (ropa.category === "men's clothing") {
-        document.querySelector("#carousel_men");
-    } else {
-        document.querySelector("#carousel_women");
+        const clothes = cloth.render();
+        contenedor.appendChild(clothes);
+        cloth.addClickListener();
     };
-
-    const clothes = cloth.render();
-    contenedor.appendChild(clothes);
-    cloth.addClickListener();
 };
 
 /*let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32b295.jpg', 

@@ -44,6 +44,8 @@ footer {
     padding-left: -30px;
     border-radius: 20px;
     max-width: fit-content;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .nav a {
@@ -103,6 +105,10 @@ footer {
     outline: none;
     width: 100px;
     background-position: left;
+}
+
+.favoritos {
+    margin: 10px;
 }
 
 /*Página principal*/
@@ -371,7 +377,6 @@ iframe {
 .carrito {
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    border: 0.5rem solid blueviolet;
     border-radius: 1rem;
 }
 
