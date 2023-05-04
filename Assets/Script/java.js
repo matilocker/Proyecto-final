@@ -1,21 +1,21 @@
-import { Producto, traerRopa, navigation_bar } from "./utils.js";
-/*
+import { Producto, traerRopa, navigation_bar, pieDePagina } from "./utils.js";
 
-
-*/
-
-// header
+// header y footer
 
 document.addEventListener('DOMContentLoaded', () => {
     navigation_bar();
-  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    pieDePagina();
+});
 
 //carrusel 
 const render = async () => {
     const data = await traerRopa();
     for (let ropa of data) {
         let cloth = new Producto(ropa.image, ropa.title, ropa.id);
-        let contenedor;
+        let carousel;
 
         if (ropa.category === "men's clothing") {
             document.querySelector("#carousel_men");
@@ -24,7 +24,7 @@ const render = async () => {
         };
 
         const clothes = cloth.render();
-        contenedor.appendChild(clothes);
+        carousel.appendChild(clothes);
         cloth.addClickListener();
     };
 };

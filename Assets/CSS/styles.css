@@ -14,7 +14,7 @@ body {
 }
 
 header,
-footer {
+.footer {
     padding: 0px;
     width: 100vw;
 }
@@ -24,7 +24,7 @@ header {
     margin: -140px;
 }
 
-footer {
+.footer {
     background-color: var(--white);
     box-sizing: border-box;
     height: 300px;
@@ -55,7 +55,7 @@ footer {
     margin: 0 1.5vw;
 }
 
-.contenedor {
+.nav_bar {
     display: flex;
     padding: 0px;
     flex-direction: column;
@@ -63,7 +63,7 @@ footer {
     justify-content: center;
 }
 
-.contenedor a img {
+.nav_bar a img {
     display: flex;
     justify-content: center;
     object-fit: contain;
@@ -72,7 +72,7 @@ footer {
     margin: 0px;
 }
 
-.contenedor a {
+.nav_bar a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ footer {
     margin-bottom: 0px;
 }
 
-.contenedor .nav input {
+.nav_bar .nav input {
     outline: none;
     height: 30px;
     width: 50px;
@@ -113,7 +113,7 @@ footer {
 
 /*Página principal*/
 
-.contenedor {
+.nav_bar {
     padding: 1% 5%;
     margin: auto;
     display: flex;
