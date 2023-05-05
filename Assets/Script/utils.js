@@ -151,7 +151,7 @@ export const pieDePagina = async () => {
     maps.width = "600";
     maps.height = "450";
     maps.style = "border:0;";
-    maps.allowFullscreen = "";
+    maps.allowFullscreen = "true";
     maps.loading = "lazy";
     maps.referrerPolicy = "no-referrer-when-downgrade";
 
