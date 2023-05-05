@@ -11,23 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //carrusel 
-const render = async () => {
-    const data = await traerRopa();
-    for (let ropa of data) {
-        let cloth = new Producto(ropa.image, ropa.title, ropa.id);
-        let carousel;
 
-        if (ropa.category === "men's clothing") {
-            document.querySelector("#carousel_men");
-        } else {
-            document.querySelector("#carousel_women");
-        };
 
-        const clothes = cloth.render();
-        carousel.appendChild(clothes);
-        cloth.addClickListener();
-    };
-};
 
 /*let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32b295.jpg', 
 'https://i.pinimg.com/564x/40/38/cc/4038ccbfa8b0e80bb438de1111d3d6a2.jpg', 
