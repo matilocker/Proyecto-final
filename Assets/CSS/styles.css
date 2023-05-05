@@ -127,6 +127,22 @@ header {
 
 /**Imagen de Landing (Hombre y Mujer)*/
 
+#carousel_men{
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    object-fit: contain;
+}
+
+.image{
+    position:relative;
+    object-fit: contain;
+    }
+
+.image img {
+height: 20vh;
+ }
+
 .imagen,
 .imagen2 {
     flex-direction: column;

@@ -1,3 +1,10 @@
+export const traerRopa = async () => {
+    const response = await fetch("https://raw.githubusercontent.com/matilocker/Proyecto-final/Mateo/Assets/Script/ropa.json");
+    const data = await response.json();
+    console.log(data);
+    return data;
+};
+
 export class Producto {
     titulo = "";
     id = "";
@@ -28,7 +35,7 @@ export class Producto {
         } else {
             carousel_women.appendChild(caja);
         };
-        return imagen;
+        return caja;
     };
 
     addClickListener() {
@@ -41,12 +48,6 @@ export class Producto {
         });
     };
 }
-
-export const traerRopa = async () => {
-    const response = await fetch("Assets/Script/ropa.json");
-    const data = await response.json();
-    return data;
-};
 
 export const navigation_bar = async () => { //Orgullosísimo porque esto lo escribí solo
     const header = await document.querySelector(".nav_bar");

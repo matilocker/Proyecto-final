@@ -1,7 +1,4 @@
- {
-    "men's": [],
-    "Ropa": [
-    
+[
     {
         "id": 1,
         "title": "Pantalón en cuero sintético",
@@ -75,4 +72,3 @@
         "image": "./Imgs./w1365_q60.jpg.avif"
     }
 ]
-}

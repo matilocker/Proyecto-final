@@ -1,6 +1,10 @@
 import { Producto, traerRopa, navigation_bar, pieDePagina } from "./utils.js";
 
+let base = [];
+
+
 // header y footer
+const carruseles = document.querySelectorAll(".carrusel");
 
 document.addEventListener('DOMContentLoaded', () => {
     navigation_bar();
@@ -12,8 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //carrusel 
 
+const alimentarRopa = async () => {
+    base = await traerRopa();
+    console.log(base);
+}
 
-
+alimentarRopa();
 /*let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32b295.jpg', 
 'https://i.pinimg.com/564x/40/38/cc/4038ccbfa8b0e80bb438de1111d3d6a2.jpg', 
 'https://i.pinimg.com/564x/6d/88/a6/6d88a67f13592dd5ccfed12b19925789.jpg',
@@ -81,7 +89,7 @@ const co = document.querySelector("#desplegar1");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
-abrir.addEventListener("click", () => {
+/*abrir.addEventListener("click", () => {
 
     co.classList.add("visible");
 
@@ -247,5 +255,4 @@ const showHtml = () => {
 
     countProducts.innerText = totalOfProducts;
 
-};
-
+};*/
