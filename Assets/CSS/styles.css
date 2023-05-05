@@ -125,7 +125,7 @@ header {
     background-color: var(--white);
 }
 
-/**Imagen de Landing (Hombre y Mujer)*/
+/*Imagen de Landing (Hombre y Mujer)*/
 
 #carousel_men{
     display: flex;
@@ -143,6 +143,8 @@ header {
 height: 20vh;
  }
 
+/*Imágenes Grandes*/
+ 
 .imagen,
 .imagen2 {
     flex-direction: column;
@@ -163,6 +165,8 @@ height: 20vh;
 .imagen2 {
     background-image: url(https://cdn.shopify.com/s/files/1/0556/2584/2854/files/chico_crema_hoodie_1944x.png?v=1678711598 );
 }
+
+/*Revisar**********/
 
 article p {
     font-size: 35px;
