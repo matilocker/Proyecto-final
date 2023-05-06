@@ -1,9 +1,11 @@
 import { Producto, traerRopa, navigation_bar, pieDePagina } from "./utils.js";
 
-let base = [];
+let base = []; //Defino variable en blanco para meter la información del Json.
 
 
-// header y footer
+// header y footer: Aquí me aseguro de que cargue la página 
+//y que luego se construyan la barra de navegación y el pie de página
+
 const carruseles = document.querySelectorAll(".carrusel");
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,7 +23,6 @@ const alimentarRopa = async () => {
     console.log(base);
     for (let card of base.Ropa) {
         let image = new Producto(card.id, card.title, card.price, card.description, card.category, card.image); //Importa el orden
-        //const images = image.render();
         const carousel_men = document.querySelector("#carousel_men");
         const carousel_women = document.querySelector("#carousel_women");
         
