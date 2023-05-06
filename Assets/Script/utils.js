@@ -1,5 +1,5 @@
 export const traerRopa = async () => {
-    const response = await fetch("https://raw.githubusercontent.com/matilocker/Proyecto-final/Mateo/Assets/Script/ropa.json");
+    const response = await fetch("https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Assets/Script/ropa.json");
     const data = await response.json();
     console.log(data);
     return data;

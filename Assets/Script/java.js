@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const alimentarRopa = async () => {
     base = await traerRopa();
     console.log(base);
-    for (let card of base.Ropa) {
+    for (let card of base) {
         let image = new Producto(card.id, card.title, card.price, card.description, card.category, card.image); //Importa el orden
         const carousel_men = document.querySelector("#carousel_men");
         const carousel_women = document.querySelector("#carousel_women");
