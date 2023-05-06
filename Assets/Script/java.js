@@ -19,6 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
 const alimentarRopa = async () => {
     base = await traerRopa();
     console.log(base);
+    for (let card of base.Ropa) {
+        let image = new Producto(card.id, card.title, card.price, card.description, card.category, card.image); //Importa el orden
+        //const images = image.render();
+        const carousel_men = document.querySelector("#carousel_men");
+        const carousel_women = document.querySelector("#carousel_women");
+        
+        if (image.label === "men's clothing") {
+            carousel_men.appendChild(image.render());
+        } else {
+            carousel_women.appendChild(image.render());
+        };
+        /*carruseles.forEach((carrusel) => {
+          carrusel.appendChild(images.cloneNode(true));
+        });*/
+      }
 }
 
 alimentarRopa();
