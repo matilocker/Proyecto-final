@@ -132,10 +132,12 @@ header {
     flex-direction: row;
     width: 10vw;
     object-fit: contain;
+    z-index: -2;
 }
 
 .men, .women {
     justify-content: space-between;
+    z-index: -1;
 }
 
 .image{
@@ -332,7 +334,7 @@ iframe {
 
 /*gustar*/
 
-.gg {
+.favorito {
     background-color: rgb(255, 255, 255);
     position: absolute;
     left: 30%;
@@ -344,7 +346,7 @@ iframe {
     width: 27%;
 }
 
-.gg.visible {
+.favorito.visible {
     visibility: visible;
 }
 

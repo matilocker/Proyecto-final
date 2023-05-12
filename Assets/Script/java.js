@@ -1,12 +1,10 @@
-import { Producto, traerRopa, navigation_bar, pieDePagina } from "./utils.js";
+import { Producto, traerRopa, navigation_bar, pieDePagina, ElementodelObjeto} from "./utils.js";
 
 let base = []; //Defino variable en blanco para meter la información del Json.
 
 
 // header y footer: Aquí me aseguro de que cargue la página 
 //y que luego se construyan la barra de navegación y el pie de página
-
-const carruseles = document.querySelectorAll(".carrusel");
 
 document.addEventListener('DOMContentLoaded', () => {
     navigation_bar();
@@ -31,13 +29,15 @@ const alimentarRopa = async () => {
         } else {
             carousel_women.appendChild(image.render());
         };
-        /*carruseles.forEach((carrusel) => {
-          carrusel.appendChild(images.cloneNode(true));
-        });*/
       }
 }
 
 alimentarRopa();
+
+ElementodelObjeto();
+
+// me gusta -------------------------------------------
+
 /*let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32b295.jpg', 
 'https://i.pinimg.com/564x/40/38/cc/4038ccbfa8b0e80bb438de1111d3d6a2.jpg', 
 'https://i.pinimg.com/564x/6d/88/a6/6d88a67f13592dd5ccfed12b19925789.jpg',
@@ -101,9 +101,9 @@ arrowsIcon.forEach(icon => {
 
 //compra-------------------------------------------
 
-const co = document.querySelector("#desplegar1");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
+//const co = document.querySelector("#desplegar1");
+//const abrir = document.querySelector("#abrir");
+//const cerrar = document.querySelector("#cerrar");
 
 /*abrir.addEventListener("click", () => {
 
@@ -114,24 +114,6 @@ const cerrar = document.querySelector("#cerrar");
 cerrar.addEventListener("click", () => {
 
     co.classList.remove("visible");
-
-})
-
-// me gusta -------------------------------------------
-
-const gg = document.querySelector("#desplegargustar");
-const abrirgustar = document.querySelector("#abrirgustar");
-const cerrargustar = document.querySelector("#cerrargustar");
-
-abrirgustar.addEventListener("click", () => {
-
-    gg.classList.add("visible");
-
-})
-
-cerrargustar.addEventListener("click", () => {
-
-    gg.classList.remove("visible");
 
 })
 
