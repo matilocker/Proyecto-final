@@ -1,103 +1,48 @@
-import { Producto, traerRopa, navigation_bar, pieDePagina, ElementodelObjeto} from "./utils.js";
+import { Producto, traerRopa, navigation_bar, pieDePagina, elementodelObjeto } from "./utils.js";
 
-let base = []; //Defino variable en blanco para meter la información del Json.
 
 
 // header y footer: Aquí me aseguro de que cargue la página 
 //y que luego se construyan la barra de navegación y el pie de página
 
-document.addEventListener('DOMContentLoaded', () => {
-    navigation_bar();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    pieDePagina();
-});
-
 //carrusel 
 
 const alimentarRopa = async () => {
-    base = await traerRopa();
+    const base = await traerRopa();
     console.log(base);
     for (let card of base) {
         let image = new Producto(card.id, card.title, card.price, card.description, card.category, card.image); //Importa el orden
         const carousel_men = document.querySelector("#carousel_men");
         const carousel_women = document.querySelector("#carousel_women");
-        
+
         if (image.label === "men's clothing") {
             carousel_men.appendChild(image.render());
         } else {
             carousel_women.appendChild(image.render());
         };
-      }
+    }
 }
 
 alimentarRopa();
 
-ElementodelObjeto();
+const render = async () => {
+    navigation_bar();
+    pieDePagina();
+    elementodelObjeto();
+    await alimentarRopa();
+}
+
+window.onload = render;
+
 
 // me gusta -------------------------------------------
 
-/*let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32b295.jpg', 
-'https://i.pinimg.com/564x/40/38/cc/4038ccbfa8b0e80bb438de1111d3d6a2.jpg', 
+/*let imagenes = ['https://i.pinimg.com/564x/21/d0/bd/21d0bde3ec55db35990ae5b59d32b295.jpg',
+'https://i.pinimg.com/564x/40/38/cc/4038ccbfa8b0e80bb438de1111d3d6a2.jpg',
 'https://i.pinimg.com/564x/6d/88/a6/6d88a67f13592dd5ccfed12b19925789.jpg',
 'https://i.pinimg.com/564x/aa/32/6d/aa326d91cff3f9ff0a3519aeefdfd030.jpg',
 'https://i.pinimg.com/564x/80/61/7d/80617dd6e3de3856a71f4f3e6a5ce078.jpg',
 'https://i.pinimg.com/564x/7e/9b/09/7e9b092dc6b1cf3fcfdbd042220a7b5b.jpg'];*/
-
-//tercer intento carrucel-------------------------------------------
-
-/*const  carousel = document.querySelectorAll(".movimiento1 img");
-const  arrowsIcon = document.querySelectorAll(".movimiento1 i");
-//const = 0;
-
-arrowsIcon.forEach(icon => {
-
-    icon.addEventListener("click", e => {
- 
-        let atras = document.querySelector('.fa-chevron-left'),
-            adelante = document.querySelector('.fa-chevron-right'),
-            img1  = document.querySelector('.aa'),
-            img2  = document.querySelector('.aa2'),
-            img3  = document.querySelector('.aa3'),
-            tgt = e.target; 
-
-        if(tgt == atras){
-            
-            if(cont > 0){
-                img1.src = imagenes[cont - 1];
-                img2.src = imagenes[cont];
-                img3.src = imagenes[cont+1];
-                cont--;
-            }else {  
-                img1.src = imagenes[imagenes.length - 3];
-                img2.src = imagenes[imagenes.length - 2];
-                img3.src = imagenes[imagenes.length - 1];
-                cont = imagenes.length - 1 ;
-            }
-
-        } else  if (tgt == adelante){
-
-            console.log(img1)
-
-            if(cont < imagenes.length - 1) 
-                img1.src = imagenes[cont + 1];
-                img2.src = imagenes[cont + 2];
-                img3.src = imagenes[cont + 3];
-                cont++;
-        
-        }else {  
-            img1.src = imagenes[0];
-            img2.src = imagenes[1];
-            img3.src = imagenes[2];
-            cont = 0;
-        }
-
-    console.log(icon);
-
-    })
-
-})*/
 
 //compra-------------------------------------------
 

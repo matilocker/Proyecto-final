@@ -159,26 +159,28 @@ export const pieDePagina = async () => {
 
 }
 
-export const ElementodelObjeto = async () => {
-    const favorito = await document.querySelector(".favorito");
-    const abrirgustar = await document.querySelector(".favoritos");
+export const elementodelObjeto = async () => {
+    const favorito = await document.querySelector(".desplegargustar");
+    const abrirgustar = await document.querySelector("#abrirgustar");
     const cerrargustar = await document.querySelector("#cerrargustar");
-  
+
     // Abre el modal al hacer clic en el botón
+
     abrirgustar.onclick = () => {
-      favorito.style.display = 'block';
+       desplegargustar.style.display = 'block';
       console.log("hola");
     }
   
     // Cierra el modal al hacer clic en la X
     cerrargustar.onclick = () => {
-      favorito.style.display = 'none';
+      alert("abrir")
+      desplegargustar.style.display = 'none';
     }
   
     // Cierra el modal al hacer clic fuera del modal
     window.onclick = function(event) {
       if (event.target == favorito) {
-        favorito.style.display = 'none';
+        desplegargustar.style.display = 'none';
       }
     }
   }; //HAcer pregunta sobre el modal.
