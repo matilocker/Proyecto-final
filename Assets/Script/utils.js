@@ -102,6 +102,28 @@ export const navigation_bar = async () => { //Orgullosísimo porque esto lo escr
     navegador.appendChild(login);
     navegador.appendChild(signup);
     console.log(favoritos);
+    
+    const favorito =  document.querySelector(".desplegargustar");
+    const abrirgustar =  document.getElementById("abrirgustar");
+    
+
+    // Abre el modal al hacer clic en el botón
+
+    abrirgustar.addEventListener("click", (e) => {
+        e.preventDefault()
+
+        favorito.style.display = 'block';
+       console.log("hola");
+
+       const cerrargustar =  document.querySelector("#cerrargustar");
+
+       cerrargustar.onclick = () => {
+          
+          favorito.style.display = 'none';
+        }
+     }) 
+     
+
 };
 
 export const pieDePagina = async () => {
@@ -160,40 +182,8 @@ export const pieDePagina = async () => {
 }
 
 export const elementodelObjeto = async () => {
-    const favorito = await document.querySelector(".desplegargustar");
-    const abrirgustar = await document.querySelector("#abrirgustar");
-    const cerrargustar = await document.querySelector("#cerrargustar");
-
-    // Abre el modal al hacer clic en el botón
-
-    abrirgustar.onclick = () => {
-       desplegargustar.style.display = 'block';
-      console.log("hola");
-    }
-  
-    // Cierra el modal al hacer clic en la X
-    cerrargustar.onclick = () => {
-      alert("abrir")
-      desplegargustar.style.display = 'none';
-    }
-  
-    // Cierra el modal al hacer clic fuera del modal
-    window.onclick = function(event) {
-      if (event.target == favorito) {
-        desplegargustar.style.display = 'none';
-      }
-    }
-  }; //HAcer pregunta sobre el modal.
+   
+  }; 
   
 
-    //abrirgustar.addEventListener("click", () => {
-      //  favorito.classList.add("visible");
-    //})
-    
-    //cerrargustar.addEventListener("click", () => {
-      //  favorito.classList.remove("visible");
-    //})
-
-/*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.0334477324554!2d-76.5327906846551!3d3.341900252867967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a1eb8d09a3c1%3A0x766b9b441dfa8bbe!2sUniversidad%20ICESI!5e0!3m2!1ses!2sco!4v1679448223332!5m2!1ses!2sco"
-width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-referrerpolicy="no-referrer-when-downgrade"></iframe>*/
+  
