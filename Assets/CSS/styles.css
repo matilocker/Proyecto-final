@@ -153,6 +153,7 @@ header {
     margin: 60px;
     z-index: -1;
     overflow-x: auto;
+    height: 60vh;
 }
 
 .image{
@@ -162,6 +163,7 @@ header {
 
 .image img {
 height: 60vh;
+object-fit: cover;
  }
 
 /*Imágenes Grandes*/
