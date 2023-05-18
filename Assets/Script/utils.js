@@ -105,8 +105,6 @@ export const navigation_bar = async () => { //Orgullosísimo porque esto lo escr
     
     const favorito =  document.querySelector(".desplegargustar");
     const abrirgustar =  document.getElementById("abrirgustar");
-    
-
     // Abre el modal al hacer clic en el botón
 
     abrirgustar.addEventListener("click", (e) => {
@@ -114,12 +112,17 @@ export const navigation_bar = async () => { //Orgullosísimo porque esto lo escr
 
         favorito.style.display = 'block';
        console.log("hola");
-
+       
+       const modal = document.createElement("div");
+       modal.classList.add("modalfavorito");
+       favorito.appendChild(modal);
        const cerrargustar =  document.querySelector("#cerrargustar");
+       modal.appendChild(cerrargustar);
 
        cerrargustar.onclick = () => {
           
           favorito.style.display = 'none';
+          favorito = '';
         }
      }) 
      
