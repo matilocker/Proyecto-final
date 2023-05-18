@@ -23,6 +23,7 @@ const alimentarRopa = async () => {
     }
 }
 
+
 alimentarRopa();
 
 const render = async () => {
@@ -31,6 +32,8 @@ const render = async () => {
     elementodelObjeto();
     await alimentarRopa();
 }
+
+
 
 window.onload = render;
 

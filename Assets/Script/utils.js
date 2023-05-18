@@ -34,10 +34,10 @@ export class Producto {
     addClickListener() {
         const image = document.querySelector("#image" + this.id);
         image.addEventListener("click", () => {
-            window.location = "/Producto.html?productId=" + this.id;
+            window.location.href = "/Producto.html?productId=" + this.id;
             const img = document.createElement("img");
             img.src = "image"
-            window.appendChild("img");
+            document.body.appendChild(img);
         });
     };
 }
@@ -90,7 +90,7 @@ export const navigation_bar = async () => { //Orgullosísimo porque esto lo escr
 <i class="fa-regular fa-user"></i>`+ " Login";
 
     const signup = document.createElement("a");
-    signup.href = "Registry.html";
+    signup.href = "registro.html";
     signup.innerHTML = `
 <i class="fa-regular fa-user-plus"></i>`+ " Sign up";
 
@@ -99,7 +99,6 @@ export const navigation_bar = async () => { //Orgullosísimo porque esto lo escr
     navegador.appendChild(tienda);
     navegador.appendChild(favoritos);
     navegador.appendChild(carrito);
-    navegador.appendChild(login);
     navegador.appendChild(signup);
     console.log(favoritos);
     
@@ -147,7 +146,7 @@ export const pieDePagina = async () => {
     const somos = document.createElement("div");
     somos.classList.add("nosotros");
     const parrafo = document.createElement("p");
-    parrafo.innerText = "hola"
+    parrafo.innerText = "Somos un emprendimiento que busca ofrecer ropa de calidad a su público con prendas que se ajustan a las tendencias del momento."
     const nosotros = document.createElement("a");
     nosotros.href = "contact.html";
     nosotros.innerText = "¿Quiénes somos?";

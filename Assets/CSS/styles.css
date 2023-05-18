@@ -137,11 +137,20 @@ header {
     position: absolute;
 }
 
-.cerrargustar {
-    width: 2vw;
-    height: 10vh;
+#cerrargustar {
+    width: 6vw;
+    height: 4vh;
+    border-radius: 10px;
     background-color: var(--yellow);
+    margin-left: 340px;
 }
+
+
+.coleccion {
+    font-size: 30px;
+    margin-left: 200px;
+}
+
 
 /*Página principal*/
 

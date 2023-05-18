@@ -68,3 +68,11 @@
     width: 100%;
   }
  
+#name {
+  border-radius: 20px;
+}
+
+.registrarse {
+  border-radius: 10px;
+  background-color:#e5e5e5;
+}

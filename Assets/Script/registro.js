@@ -1,3 +1,14 @@
+import {navigation_bar, pieDePagina, elementodelObjeto} from "./utils.js";
+
+const render = async () => {
+  navigation_bar();
+  pieDePagina();
+  elementodelObjeto();
+  await alimentarRopa();
+}
+
+window.onload = render;
+
 let myUserName = "";
 
 document.getElementById("registrationForm").addEventListener("submit", function(event) {
