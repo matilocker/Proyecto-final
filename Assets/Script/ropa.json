@@ -73,27 +73,27 @@
     },
     {
         "id": 10,
-        "title": "Suéter gris oversized en lana",
+        "title": "Blusa blanca temporada verano",
         "price": 100,
         "description": "",
-        "category": "men's clothing",
-        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./LGN_fw23_runway_press_look09.jpeg.webp"
+        "category": "women's clothing",
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./w1365_q60.jpg-3.avif"
     },
     {
         "id": 11,
-        "title": "Conjunto de tres piezas, camiseta, pantalón y saco en celeste",
+        "title": "Vestido verde de verano",
         "price": 100,
         "description": "",
-        "category": "men's clothing",
-        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./LGN_fw23_runway_press_look21.jpeg.webp"
+        "category": "women's clothing",
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./Copia%20de%20w1365_q60.jpg-2.avif"
     },
     {
         "id": 12,
-        "title": "Chaqueta oversized en cuero sintético",
+        "title": "Camisa amarilla noventera de verano",
         "price": 100,
         "description": "",
-        "category": "men's clothing",
-        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./VO0423_Designer_01.jpg.webp"
+        "category": "women's clothing",
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./Copia%20de%20w1365_q60.jpg.avif"
     },
     {
         "id": 13,
