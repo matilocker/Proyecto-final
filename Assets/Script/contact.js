@@ -42,15 +42,15 @@ const datosIntegrantes = [
 {
   
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgMkDHquJTBDZmOSo3d1O-5Mk0FHjz3jIXHw&usqp=CAU",
-    titulo: 'Persona1',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam autem nesciunt minus libero minima quae fuga, ducimus voluptate ea, earum quasi ipsam doloremque repudiandae. Doloribus possimus iste culpa non?'
+    titulo: 'Diana',
+    descripcion: 'Mi nombre es Diana. Soy una diseñadora de multimedios exitosa que ha realizado múltiples trabajs de diseño web con multinacionales de renombre. En este momento dueña de su propio emprendimiento d eropa de moda circular y feliz de portar un poco a la diferencia en la transición energética.'
 
 },
 
 {
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgsw7GyGWCn0dGFoP3GGfwx78kKe9bHKB5dUj89BuL3tsUfyQ6n3wn3FebgMyyonv2VIU&usqp=CAU",
-    titulo: 'Persona2',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam autem nesciunt minus libero minima quae fuga, ducimus voluptate ea, earum quasi ipsam doloremque repudiandae. Doloribus possimus iste culpa non?',
+    titulo: 'Mateo',
+    descripcion: 'Mi nombre es Mateo. Soy un artista performático y psicólogo de profesión. Mi mayor sueño fue poder realizar un emprendimiento de moda circular que me permita también ser mi propio jefe y poder disfrutar de mi tiempo realizando algo que me gusta y aporta al cambio climático.',
 
 },
 
