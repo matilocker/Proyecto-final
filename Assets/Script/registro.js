@@ -1,4 +1,5 @@
 import {navigation_bar, pieDePagina, elementodelObjeto} from "./utils.js";
+import { registrarPersona, actualizarLista } from "./session.js"
 
 const render = async () => {
   navigation_bar();
@@ -54,7 +55,23 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     userNameLabel.textContent = myUserName;
   }
 
-  
+const render2 = async () => {
+    actualizarLista();
+
+    const formulario = document.querySelector("#formulario-registro");
+    formulario.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const correo = event.target.correo.value;
+        const contrasena = event.target.contrasena.value;
+
+        registrarPersona(correo, contrasena);
+        actualizarLista();
+    })
+
+}
+
+window.onload = render2;
 
   
   
