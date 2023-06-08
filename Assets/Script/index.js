@@ -17,14 +17,13 @@ const alimentarRopa = async () => {
 
         if (image.label === "men's clothing") {
             carousel_men.appendChild(image.render());
+            
         } else {
             carousel_women.appendChild(image.render());
         };
+        image.addClickListener();
     }
 }
-
-
-alimentarRopa();
 
 const render = async () => {
     navigation_bar();
@@ -33,10 +32,7 @@ const render = async () => {
     await alimentarRopa();
 }
 
-
-
 window.onload = render;
-
 
 // me gusta -------------------------------------------
 

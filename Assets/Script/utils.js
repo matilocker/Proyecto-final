@@ -25,7 +25,7 @@ export class Producto {
         const imagen = document.createElement("img");
         const caja = document.createElement("div");
         caja.classList.add("image");
-
+        imagen.id = "image"+this.id;
         imagen.src = this.imagen;
         caja.appendChild(imagen);
         return caja;

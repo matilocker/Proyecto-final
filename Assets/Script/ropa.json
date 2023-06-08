@@ -5,7 +5,7 @@
         "price": 100,
         "description": "",
         "category": "men's clothing",
-        "image": "./Imgs./00019-peter-do-spring-2023-ready-to-wear-credit-monica-feudi.jpg.webp"
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./00019-peter-do-spring-2023-ready-to-wear-credit-monica-feudi.jpg.webp"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "price": 100,
         "description": "",
         "category": "women's clothing",
-        "image": "./Imgs./00020-saint-laurent-spring-2023-ready-to-wear-credit-gorunway.jpg.webp"
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./00019-peter-do-spring-2023-ready-to-wear-credit-monica-feudi.jpg.webp"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "price": 100,
         "description": "",
         "category": "women's clothing",
-        "image": "./Imgs./00033-dries-van-noten-spring-2023-ready-to-wear-credit-gorunway.jpg.webp"
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./00033-dries-van-noten-spring-2023-ready-to-wear-credit-gorunway.jpg.webp"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "price": 100,
         "description": "",
         "category": "women's clothing",
-        "image": "./Imgs./app001prod.jpeg"
+        "image": "https://github.com/matilocker/Proyecto-final/blob/main/Imgs./app001prod.jpeg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "price": 100,
         "description": "",
         "category": "men's clothing",
-        "image": "./Imgs./LGN_fw23_runway_press_look06.jpeg.webp"
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./LGN_fw23_runway_press_look06.jpeg.webp"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "price": 100,
         "description": "",
         "category": "men's clothing",
-        "image": "./Imgs./LGN_fw23_runway_press_look09.jpeg.webp"
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./LGN_fw23_runway_press_look09.jpeg.webp"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "price": 100,
         "description": "",
         "category": "men's clothing",
-        "image": "./Imgs./LGN_fw23_runway_press_look21.jpeg.webp"
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./LGN_fw23_runway_press_look21.jpeg.webp"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "price": 100,
         "description": "",
         "category": "men's clothing",
-        "image": "./Imgs./VO0423_Designer_01.jpg.webp"
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./VO0423_Designer_01.jpg.webp"
     },
     {
         "id": 9,
@@ -69,6 +69,6 @@
         "price": 100,
         "description": "",
         "category": "women's clothing",
-        "image": "./Imgs./w1365_q60.jpg.avif"
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./w1365_q60.jpg.avif"
     }
 ]
