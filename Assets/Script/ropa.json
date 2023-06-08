@@ -70,5 +70,37 @@
         "description": "",
         "category": "women's clothing",
         "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./w1365_q60.jpg.avif"
+    },
+    {
+        "id": 10,
+        "title": "Suéter gris oversized en lana",
+        "price": 100,
+        "description": "",
+        "category": "men's clothing",
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./LGN_fw23_runway_press_look09.jpeg.webp"
+    },
+    {
+        "id": 11,
+        "title": "Conjunto de tres piezas, camiseta, pantalón y saco en celeste",
+        "price": 100,
+        "description": "",
+        "category": "men's clothing",
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./LGN_fw23_runway_press_look21.jpeg.webp"
+    },
+    {
+        "id": 12,
+        "title": "Chaqueta oversized en cuero sintético",
+        "price": 100,
+        "description": "",
+        "category": "men's clothing",
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./VO0423_Designer_01.jpg.webp"
+    },
+    {
+        "id": 13,
+        "title": "Vestido blanco elegante",
+        "price": 100,
+        "description": "",
+        "category": "women's clothing",
+        "image": "https://raw.githubusercontent.com/matilocker/Proyecto-final/main/Imgs./w1365_q60.jpg.avif"
     }
 ]
