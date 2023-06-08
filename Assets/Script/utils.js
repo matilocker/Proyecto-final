@@ -25,28 +25,21 @@ export class Producto {
         const imagen = document.createElement("img");
         const caja = document.createElement("div");
         caja.classList.add("image");
-        imagen.id = this.#obtenerId();
+        imagen.id = "image"+this.id;
         imagen.src = this.imagen;
-        imagen.classList.add("imagen");
         caja.appendChild(imagen);
         return caja;
     };
 
     addClickListener() {
-        const id = this.#obtenerId();
         const image = document.querySelector("#image" + this.id);
         image.addEventListener("click", () => {
             window.location.href = "/Producto.html?productId=" + this.id;
             const img = document.createElement("img");
-            img.src = "image"
+            img.src = this.imagen;
             document.body.appendChild(img);
         });
     };
-
-    #obtenerId() {
-        return "image-" + this.#id;
-    }
-    
 }
 
 export const navigation_bar = async () => { //Orgullosísimo porque esto lo escribí solo
